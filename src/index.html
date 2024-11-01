@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Finder & Planner</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header id="header" role="banner">
+        <div class="header-content">
+            <h1>iT2 <img src="kitchen.png" alt="Kitchen Logo" class="logo"></h1>
+            <nav role="navigation">
+                <a href="planner.html" class="nav-button">Meal Planner</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Sidebar Section -->
+        <aside class="filter-sidebar" aria-labelledby="filterMealsTitle">
+            <h2 id="filterMealsTitle">Meals</h2>
+
+            <div id="mealResults"></div>
+            <!-- Filter by Ingredient -->
+            <label for="ingredient">Ingredient</label>
+            <select id="ingredient" aria-required="true">
+                <option value="" disabled selected hidden>Select an ingredient</option>
+                <option value="Chicken">Chicken</option>
+                <option value="Beef">Beef</option>
+                <option value="Pork">Pork</option>
+                <option value="Salmon">Salmon</option>
+                <option value="Potato">Potato</option>
+                <option value="Tomato">Tomato</option>
+                <option value="Onion">Onion</option>
+                <option value="Garlic">Garlic</option>
+                <option value="Mushroom">Mushroom</option>
+                <option value="Carrot">Carrot</option>
+                <option value="Cheese">Cheese</option>
+                <option value="Sugar">Sugar</option>
+                <option value="Butter">Butter</option>
+                <option value="Salt">Salt</option>
+            </select>
+
+            <!-- Filter by Category -->
+            <label for="category">Category</label>
+            <select id="category" aria-required="true">
+                <option value="" disabled selected hidden>Select a category</option>
+                <option value="Seafood">Seafood</option>
+                <option value="Vegetarian">Vegetarian</option>
+                <option value="Dessert">Dessert</option>
+            </select>
+
+            <!-- Search Button -->
+            <button onclick="searchMeal()" class="search-button">Search</button>
+        </aside>
+    </main>
+    <!-- Modal for Meal Information -->
+    <div id="mealModal" class="modal" role="dialog" aria-labelledby="mealInfoTitle" aria-hidden="true">
+        <div class="modal-content">
+            <button class="close" onclick="closeModal()" aria-label="Close">&times;</button>
+            <h1 id="mealInfoTitle">Meal Details</h1>
+            <div id="mealInfo">
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

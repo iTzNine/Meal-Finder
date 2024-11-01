@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Planner</title>
+    <link rel="stylesheet" href="planner.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header-container">
+            <div class="title-logo">
+                <h1>iT2</h1><div class="logo-container">
+                    <img src="kitchen.png" alt="Kitchen Logo">
+                </div>
+            </div>
+        </div>
+
+        <div class="planner-section">
+            <h2>Meal Planner</h2>
+
+            <!-- Form for Adding Meals -->
+            <form id="plannerForm" class="center-content" onsubmit="addMeal(event)">
+                <label for="plannerMeal">Add a Meal:</label>
+                <input type="text" id="plannerMeal" placeholder="Meal to add" required />
+                <button type="submit">Add to Planner</button>
+            </form>
+            <ul id="plannerList"></ul>
+            <button id="saveButton">Save Meals</button>
+        </div>
+        <!-- Go Back Button -->
+        <button onclick="goBack()" class="go-back-button" aria-label="Go back to the main page">Go Back</button>
+    </div>
+    <script src="planner.js"></script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* General Styling */
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-image: url('food.jpg'); /* Change to the correct path of your image */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+  }
+  
+  h1, h2 {
+    text-align: center;
+  }
+  
+  /* Container Styling */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header */
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .title-logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .logo-container img {
+    max-width: 200px;
+    height: auto;
+  }
+  
+  /* Planner Section */
+  .planner-section {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  /* Headings */
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  h2 {
+    font-size: 2em;
+    color: #444;
+    margin-bottom: 15px;
+  }
+  
+  /* Sidebar Filter Styling */
+  .filter-sidebar {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .filter-sidebar label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .filter-sidebar input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Meal Planner Form */
+  #plannerForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  #plannerMeal {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  #plannerForm button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #plannerForm button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Meal List */
+  #plannerList {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  #plannerList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  #plannerList button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  #plannerList button:hover {
+    background-color: darkred;
+  }
+  
+  /* Go Back Button */
+  .go-back-button {
+    margin-top: 20px;
+    background-color: #FF7043;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .go-back-button:hover {
+    background-color: #FF5722;
+  }
+  
+  /* Notification */
+  .notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .planner-section {
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 2em;
+    }
+  
+    h2 {
+      font-size: 1.5em;
+    }
+  
+    #plannerForm {
+      flex-direction: column;
+    }
+  }  
